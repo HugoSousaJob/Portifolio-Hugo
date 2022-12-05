@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Sousa de jesus - Portfolio</title>
+    <link rel="stylesheet" href="~/css/Styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap:100,400" rel="stylesheet">
+    <meta name="viewport" content="device-width initial-scale= 1.0">
+</head>
+
+<body>
+    <div class="navigation" id="navigation">
+        <ul>
+            <li><a href="@Url.Action("Apis")">Apis</a></li>
+            <li><a href="@Url.Action("Portfolio")">Portfolio</a></li>
+            <li><a href="@Url.Action("Curriculo")">Curriculo</a></li>
+            <li><a href="@Url.Action("Contato")">Contatos</a></li>
+            <li class="treeline-icon" id="treeline-icon" onclick="adicionarClass()">&#9776</li>
+        </ul>
+    </div>
+    <div class="capa">
+        <div class="profile-Pic">
+            <img src="~/Img/FotoHugo.png" alt="ImagemHugo">
+        </div>
+        <div class="profile-title">
+            <h1>Hugo <span> Henrique Sousa</span> </h1>
+            <h2>Desenvolvedor e Analista de teste</h2>
+        </div>
+    </div>
+
+    <script type="text/javaScript" src="~/js/javaScript.js"></script>
+</body>
+</html>

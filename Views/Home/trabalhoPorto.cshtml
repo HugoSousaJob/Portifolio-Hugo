@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Styles.css">
+    <meta name="viewport" content="device-width initial-scale= 1.0">
+</head>
+
+<body>
+    <div class="navigation" id="navigation">
+        <ul>
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li><a href="@Url.Action("Apis")">Home</a></li>
+            <li><a href="@Url.Action("Portfolio")">Portfolio</a></li>
+            <li><a href="@Url.Action("Curriculo")">Curriculo</a></li>
+            <li><a href="@Url.Action("Contato")">Contatos</a></li>
+            <li class="treeline-icon" id="treeline-icon" onclick="adicionarClass()">&#9776</li>
+        </ul>
+    </div>
+    <div class="main">
+        <ul class="caminho">
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li>></li>
+            <li>Portfolio</li>
+            <li>></li>
+            <li>Porto Seguro</li>
+        </ul>
+        <h1>Porto Seguro</h1>
+
+
+        <img class="fotosTrabalho" src="~/Img/planos-porto-seguro-.png">
+
+        <h2>Inexpron Técnologia e Represetação Ltda - Desenvolvedor </h2>
+        <h3>Alocação Porto Seguro - Analista e Desenvolvedor de Sistemas</h3>
+        <p>
+            Trabalhei no Back End realizando correções e implementações utilizando .NET CORE e ENTITY FRAMEWORK CORE
+            em um projeto com arquitetura MVW. 
+            Participando do desenvolvimento da aplicação em todas as camadas (MODEL,VIEW, CONTROLER), WebAPI,
+            ApiRest e integrações com APIS externas. 
+        </p>
+
+            <h2>Descrição do projeto</h2>
+            <h3>Alocação Porto Seguro - QA</h3>
+            <p>
+                Trabalhei com equipe de Sprints, onde fui responsável por garantir a qualidade do produto entendendo o fluxo,
+                as funcionalidades e as regras de sistemas. Criando testes automatizados utilizando a linguagem JAVA.
+                Utilizamos também Cumcumber, Jenkins, junit, Selenium e na criação dos cenários de testes utilizando a metodologia BDD (Behavior Driven Development).
+            </p>
+        
+
+
+            <br><br>
+
+            <ul class="liVolta">
+                <li> <a href="@Url.Action("Portfolio")"> Voltar</a></li>
+            </ul>
+
+    </div>
+
+    <script type="text/javaScript" src="~/js/javaScript.js"></script>
+</body>
+</html>

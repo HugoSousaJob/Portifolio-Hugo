@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Styles.css">
+    <meta name="viewport" content="device-width initial-scale= 1.0">
+
+</head>
+
+<body>
+    <div id="navigation" class="navigation">
+        <ul>
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li><a href="@Url.Action("Apis")">Apis</a></li>
+            <li><a href="@Url.Action("Portfolio")">Portfolio</a></li>
+            <li><a href="@Url.Action("Curriculo")">Curriculo</a></li>
+            <li><a href="@Url.Action("Contato")">Contatos</a></li>
+            <li id="treeline-icon" class="treeline-icon" onclick="adicionarClass()">&#9776</li>
+
+        </ul>
+    </div>
+    <div class="main">
+        <ul class="caminho">
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li>></li>
+            <li>Portfolio</li>
+            <li>></li>
+            <li>InforSystem</li>
+        </ul>
+        <h1>InforSystem</h1>
+        <img class="fotosTrabalho" src="~/Img/consultoria-empresarial.jpg">
+        <h2>Descrição do projeto</h2>
+        <h3>Alocação Carglass - Desenvolvedor</h3>
+
+        <p>
+            Atuei com a linguagem C# e a arquitetura MVC, onde participei do desenvolvimento da aplicação em todas as
+            camadas (Model, View, Controler). WebAPI, serviços SOAP, tendo também a experiência em Jquery, Ajax, CSS, HTML5, BootStrap framework, front end
+            e com versionamento trabalhei com TFS e GIT, tendo conhecimento com banco de dados SQL Server. 
+        </p>
+
+        <h3> Alocação Porto Seguro - QA</h3>
+        <p> Trabalhei com equipe de Sprints, onde fui responsável por garantir a qualidade do produto entendendo o fluxo,
+            as funcionalidades e as regras de sistemas. Criando e executando cenários de tstes utilizando a metodologia BDD, JIRA e Octane para armazenar e administrar 
+        na gestão e planejamento do projeto. Utilizamos a metodologia SCRUM. 
+
+
+        </p>
+
+        <br><br>
+
+        <ul class="liVolta">
+            <li> <a href="@Url.Action("Portfolio")">&larr; Voltar</a></li>
+        </ul>
+
+    </div>
+
+    <script type="text/javaScript" src="~/js/javaScript.js"></script>
+</body>
+
+</html>

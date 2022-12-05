@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Hugo Sousa</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Styles.css">
+    <meta name="viewport" content="device-width initial-scale= 1.0">
+</head>
+
+<body>
+    <div class="navigation" id="navigation">
+        <ul>
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li><a href="@Url.Action("Apis")">Home</a></li>
+            <li><a href="@Url.Action("Portfolio")">Portfolio</a></li>
+            <li><a href="@Url.Action("Contato")">Contatos</a></li>
+            <li class="treeline-icon" id="treeline-icon" onclick="adicionarClass()">&#9776</li>
+        </ul>
+    </div>
+    <div class="main">
+
+        <ul class="caminho">
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li>></li>
+            <li>Currículo</li>
+        </ul>
+        <h1>Currículo</h1>
+        <h2>Dados Pessoais</h2>
+        <hr>
+        <img class="cv-pic" src="~/Img/FotoHugo.png">
+        <h3>Nome:</h3>
+
+        <p>Hugo Henrique sousa de jesus</p>
+
+        <h3>Data de Nascimento:</h3>
+
+        <p>03/02/1991</p>
+
+        <h3>Residência:</h3>
+        <p>São Paulo, Brasil</p>
+        <h3 style="clear: left;">Idiomas:</h3>
+        <p>Português (Nativo)</p>
+        <p>Iglês (Basico)</p>
+        <h2>Sobre Mim</h2>
+        <hr>
+        <p>
+            Ingressei na área de tecnologia faz 7 anos, onde exerço minha função com foco e disciplina, sempre buscando
+            melhorar e aprimorar meus conhecimentos, orientado ao cliente, com histórico de bom trabalho de equipe
+            voltado a atingir ou superar metas. Dedicado e esforçado, com determinação em entregar excelência.
+        </p>
+        <p>
+            Procuro novas oportunidades para crescimentos profissional e pessoal, não tenho medo do    novo, gosto de novos
+            começos e principalmente novos desafios.
+            Só preciso de uma oportunidade para mostrar o quanto posso agregar e acrescentar a uma equipe e a empresa.
+        </p>
+        <h2>Educação</h2>
+        <hr>
+        <h3>2017 - 2020</h3>
+        <p>Analise e Desenvolvimento de Sistemas – Bacharelado 2017/ 2019 - Faculdade Carlos Drummond de Andrade – Tatuapé</p>
+        <h2>Habilidades</h2>
+        <hr>
+        <h3>DESENVOLVIMENTO WEB & PROGRAMAÇÃO</h3>
+        <p>C# / asp.net MVC / Sql/ JavaScript / Jquery / Css / Html5</p>
+        <h3>Testes</h3>
+        <p>Selenium /Postman/Xunit</p>
+        <h3>Metodologias</h3>
+        <p>Scrum / TDD / BDD</p>
+
+        <h2>Experiência de Trabalho</h2>
+        <hr>
+        <h3>2019-2020</h3>
+        <p>Analista de Testes em Porto Seguro - São Paulo (Brasil)</p>
+
+        <h3>2017-2018</h3>
+        <p>Desenvolvedor Junior na InforSystem -São Paulo (Brasil) </p>
+
+        <h3>2016-2017</h3>
+        <p>Analista de Testes na Leroy Merlin -São Paulo (Brasil)</p>
+
+
+        <h2>Contato</h2>
+        <hr>
+        <p>Hugo.henriquesousajob@gmail.com</p>
+        <p>seu telefone aqui</p>
+
+        <ul class="liVolta">
+            <li> <a href="@Url.Action("Portfolio")">&larr;Voltar ao Portifolio</a></li>
+        </ul>
+    </div>
+    <script type="text/javaScript" src="~/js/javaScript.js"></script>
+</body>
+
+</html>

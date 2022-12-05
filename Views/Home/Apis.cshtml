@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apis</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Styles.css">
+    <meta name="viewport" content="device-width initial-scale= 1.0">
+</head>
+
+<body>
+    <div class="navigation" id="navigation">
+        <ul>
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li><a href="@Url.Action("Portfolio")">Portfolio</a></li>
+            <li><a href="@Url.Action("Curriculo")">Curriculo</a></li>
+            <li><a href="@Url.Action("Contato")">Contatos</a></li>
+            <li class="treeline-icon" id="treeline-icon" onclick="adicionarClass()">&#9776</li>
+        </ul>
+    </div>
+    <div class="main">
+
+        <ul class="caminho">
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li>></li>
+            <li>Currículo</li>
+        </ul>
+        <h1>Apis Rest</h1>
+        <h2>Apis de cadastro, consulta, update e delete de Filmes</h2>
+        <hr>
+       
+        
+        <h2>Busca filmes lançamento em São Paulo</h2>
+        
+        <h1>Wcf</h1>
+        <h2>Servico Wcf que busca uma lista de Empresas e suas descrições</h2>
+        <hr>
+       
+        <h2>Habilidades</h2>
+        <hr>
+  
+        <hr>
+     
+        <ul class="liVolta">
+            <li> <a href="@Url.Action("Portfolio")">&larr;Voltar ao Portifolio</a></li>
+        </ul>
+    </div>
+    <script type="text/javaScript" src="~/js/javaScript.js"></script>
+</body>
+
+</html>

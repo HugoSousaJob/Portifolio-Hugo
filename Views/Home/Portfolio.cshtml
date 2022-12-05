@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Styles.css">
+    <meta name="viewport" content="device-width initial-scale= 1.0">
+</head>
+
+<body>
+    <div class="navigation" id="navigation">
+        <ul>
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li><a href="@Url.Action("Apis")">Portfolio</a></li>
+            <li><a href="@Url.Action("Curriculo")">Curriculo</a></li>
+            <li><a href="@Url.Action("Contato")">Contatos</a></li>
+            <li class="treeline-icon" id="treeline-icon" onclick="adicionarClass()">&#9776</li>
+        </ul>
+    </div>
+    <div class="main">
+        <ul class="caminho">
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li>></li>
+            <li><a href="@Url.Action("Portfolio")">Portfolio</a></li>
+        </ul>
+        <h1>Trabalhos Recentes</h1>
+        <div class="miniatura" )">
+            <a href="@Url.Action("TrabalhoLeroy")">
+                <div class="blackbox">
+                    <div class="backbox-text">
+                        <h1>Leroy merlin -Prestador de servicos </h1>
+                        <H2>Analista e desenvolvedor</H2>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="miniatura" >
+            <a href="@Url.Action("TrabalhoPorto")">
+                <div class="blackbox">
+                    <div class="backbox-text">
+                        <h1>Porto Seguro -Prestador de servicos </h1>
+                        <H2>Analista e desenvolvedor</H2>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="miniatura" style="background-image: url('~/Resources/Img/consultoria-empresarial.jpg');">
+            <a href="@Url.Action("TrabalhoInforSystem")">
+                <div class="blackbox">
+                    <div class="backbox-text">
+                        <h1>InforSystem - Consultoria </h1>
+                        <H2>Desenvolvedor</H2>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <br><br>
+
+        <ul class="liVolta">
+            <li> <a href="@Url.Action("Portfolio")">&larr; Voltar</a></li>
+        </ul>
+
+        <script type="text/javaScript" src="~/js/javaScript.js"></script>
+    </div>
+</body>
+
+</html>

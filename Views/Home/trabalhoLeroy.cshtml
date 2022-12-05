@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap:100,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/Styles.css">
+    <meta name="viewport" content="device-width initial-scale= 1.0">
+</head>
+
+<body>
+    <div class="navigation" id="navigation">
+        <ul>
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li><a href="@Url.Action("Apis")">Home</a></li>
+            <li><a href="@Url.Action("Portfolio")">Portfolio</a></li>
+            <li><a href="@Url.Action("Curriculo")">Curriculo</a></li>
+            <li><a href="@Url.Action("Contato")">Contatos</a></li>
+            <li class="treeline-icon" id="treeline-icon" onclick="adicionarClass()">&#9776</li>
+        </ul>
+    </div>
+    <div class="main">
+        <ul class="caminho">
+            <li><a href="@Url.Action("Index")">Home</a></li>
+            <li>></li>
+            <li>Portfolio</li>
+            <li>></li>
+            <li>Leroy merlin</li>
+        </ul>
+        <h1>Leroy Merlin</h1>
+
+
+        <img class="fotosTrabalho" src="~/Img/LeroyMerlin.jpg">
+        <h2>Descrição do projeto</h2>
+        <h3>Analista de Testes </h3>
+        <p> 
+            Atuei na mudança de visão do estoque do sistema Gemco para SAP, analisando após a migração se os dados continuavam consistentes. 
+            E também, criando cenários de testes e automação utilizando o Selenium. 
+        </p>
+        <br><br>
+
+        <ul class="liVolta">
+            <li> <a href="@Url.Action("Portfolio")"> Voltar</a></li>
+        </ul>
+
+    </div>
+    <script type="text/javaScript" src="~/js/javaScript.js"></script>
+</body>
+
+</html>
